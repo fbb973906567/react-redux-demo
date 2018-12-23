@@ -5,7 +5,7 @@ const reducer=function(state={num:0},action){
                 case "DECREMENT":
                 return {...state,num:state.num-1}
                default:
-               break
+               return state;
                 
         }
 }

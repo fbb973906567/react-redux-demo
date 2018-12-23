@@ -28,7 +28,7 @@ class App extends Component {
 }
 const mapStateToProps=function(state){
   debugger
-  return state?state:{};
+  return state;
 }
 
 const mapDispatchToProps=function(dispatch){
