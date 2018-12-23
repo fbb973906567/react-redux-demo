@@ -31,5 +31,8 @@ import {conect} from 'react-redux'
  export default connect(mapStateToProps,mapDispatchToProps)(App);
  ```
  ## 坑一
-  第一次触发mapStateToDispatch时候，传入的state是一个undefined，框架要求这个函数里面return返回的必须是一个纯对象。目前想到的解决方法是在这个方法里面做一个空判断(但是觉得还是有点小问题)
+  第一次触发mapStateToDispatch时候，传入的state是一个undefined，框架要求这个函数里面return返回的必须是一个纯对象。目前想到的解决方法是在这个方法里面做一个空判断(但是觉得还是有点小问题)  \
+ 
+ 解决：reducer里面，default后面return 返回一个state的初始值，而不是return false
+     
  
